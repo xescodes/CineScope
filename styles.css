@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #e50914;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-inputs {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+input[type="text"], select {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="text"] {
+    flex: 2;
+}
+
+select {
+    flex: 1;
+    cursor: pointer;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: 2px solid #e50914;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff0f1f;
+}
+
+.results-table {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #222;
+    color: #e50914;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+.movie-poster {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movie-title {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.movie-title:hover {
+    color: #e50914;
+}
+
+.movie-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.genre-tag {
+    background-color: #444;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.movie-rating {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.movie-overview {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.movie-overview:hover {
+    color: #e50914;
+}
+
+.movie-plot {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.movie-plot-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.movie-plot-link:hover {
+    color: #e50914;
+}
+
+.error-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.error-message ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.error-message li {
+    margin: 8px 0;
+    color: #fff;
+}
+
+.error-message a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.error-message a:hover {
+    text-decoration: underline;
+}
+
+.error-details {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.sortable {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 25px;
+}
+
+.sortable:hover {
+    background-color: #444;
+}
+
+.sort-indicator {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #e50914;
+    opacity: 0.5;
+}
+
+.sortable.asc .sort-indicator {
+    opacity: 1;
+}
+
+.sortable.desc .sort-indicator {
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 1;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-inputs {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .results-table {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .movie-overview {
+        max-width: 200px;
+    }
+} 

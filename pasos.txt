@@ -1,0 +1,34 @@
+https://github.com/xescodes/CineScope
+https://xescodes.github.io/CineScope/
+
+crea una web básica autocontenida que permite hacer búsquedas a través de la API gratuita de The Movie Database (TMDb)
+
+create a basic self-contained, searchable website using The Movie Database's free API (TMDb)
+
+TMDB offers a powerful API service that is free for personal use. Please ensure you attribute TMDB for any images or data you use. You can find the logos for attribution here.
+Documentation
+
+===
+
+Our primary documentation is located at developer.themoviedb.org.
+Support
+
+If you have questions or comments about the information covered here, please create a post on our support forums.
+API Details
+
+Test your API credentials by clicking here. You can also edit the details of your app by clicking here.
+API Read Access Token
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2M2Q3NWQxNGU4YWQzMDUyZDZhNzBmZjBlN2MyODcyOSIsIm5iZiI6MTc0MjQ2MzMzNC4yNTYsInN1YiI6IjY3ZGJlMTY2MDg3NDllZmUzNGU3YTA0MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WcjB1BMmGQktSyTfABzMeOf1zZzeXfo0D8gpbokRKYM
+
+API Key
+63d75d14e8ad3052d6a70ff0e7c28729
+
+===
+
+write a complete and detailed Readme.md file to be included in the repository
+I want it to be attractive, modern, memorable and engaging
+I want it to be written in Spanish
+
+===
+
+if no information specifically related to the main search is found to show in the plot column (results from en.wikipedia.org), show article not available
