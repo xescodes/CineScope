@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDb Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TMDb Movie Search</h1>
+            <div class="search-container">
+                <div class="search-inputs">
+                    <input type="text" id="searchInput" placeholder="Search by title, keywords, or plot...">
+                    <select id="genreSelect">
+                        <option value="">All Genres</option>
+                    </select>
+                </div>
+                <button id="searchButton">Search</button>
+            </div>
+        </header>
+        
+        <main>
+            <div id="results" class="results-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Poster</th>
+                            <th class="sortable" data-sort="title">
+                                Title
+                                <span class="sort-indicator">&#9650;</span>
+                            </th>
+                            <th>Genres</th>
+                            <th class="sortable" data-sort="rating">
+                                Rating
+                                <span class="sort-indicator">&#9650;</span>
+                            </th>
+                            <th class="sortable" data-sort="year">
+                                Year
+                                <span class="sort-indicator">&#9650;</span>
+                            </th>
+                            <th>Overview</th>
+                            <th>Plot</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
