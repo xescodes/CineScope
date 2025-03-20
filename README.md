@@ -101,8 +101,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 📞 Contacto
 
-Tu Nombre - [@tutwitter](https://twitter.com/tutwitter) - email@ejemplo.com
-
 Link del Proyecto: [https://github.com/tu-usuario/cinescope](https://github.com/tu-usuario/cinescope)
 
 ---
